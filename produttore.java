@@ -18,7 +18,7 @@ public class Produttore {
 		FileWriter fout;
 		try {
 			fout = new FileWriter(args[0]);
-			Stirng inputl = in.readLine()+"\n";
+			String inputl = in.readLine()+"\n";
 			while(inputl != null){
 				fout.write(inputl, 0, inputl.length());
 				System.out.println("Inserisci la nuova riga");
