@@ -7,22 +7,22 @@ import java.io.UnsupportedEncodingException;
 // Produttore NON e' un filtro
 public class Produttore {
 	public static void main(String[] args) {		
-		BufferedReader in = null;
 		
+		Scanner in = new Scanner(System.in);
 		if (args.length != 1){
 			System.out.println("Utilizzo: produttore <inputFilename>");
 			System.exit(0);
 		}
-		in = new BufferedReader(new InputStreamReader(System.in));
+		
 			
 		FileWriter fout;
 		try {
 			fout = new FileWriter(args[0]);
-			String inputl = in.readLine()+"\n";
+			String inputl = in.nextLine()+"\n";
 			while(inputl != null){
 				fout.write(inputl, 0, inputl.length());
 				System.out.println("Inserisci la nuova riga");
-				 inputl = in.readLine()+"\n";
+				 inputl = in.nextLine()+"\n";
 			}		
 			fout.close();
 		} 
