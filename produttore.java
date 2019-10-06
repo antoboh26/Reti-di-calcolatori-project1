@@ -14,11 +14,11 @@ public class Produttore {
 		FileWriter fout;
 		try {
 			fout = new FileWriter(args[0]);
-			String inputl = in.nextLine()+"\n";
+			String inputl = in.nextLine();
 			while(inputl != null){
 				fout.write(inputl, 0, inputl.length());
 				System.out.println("Inserisci la nuova riga");
-				 inputl = in.nextLine()+"\n";
+				 inputl = in.nextLine();
 			}		
 			fout.close();
 		} 
