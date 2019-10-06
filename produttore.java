@@ -21,7 +21,7 @@ public class Produttore {
 				System.out.println("Inserisci la nuova riga");
 				 inputl = in.nextLine();
 			}		
-			fout.close();
+			printW.close();
 		} 
 		catch (NumberFormatException nfe) { 
 			nfe.printStackTrace(); 
