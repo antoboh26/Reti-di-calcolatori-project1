@@ -22,7 +22,7 @@ public class Produttore {
 			while(inputl != null){
 				fout.write(inputl, 0, inputl.length());
 				System.out.println("Inserisci la nuova riga");
-				String inputl = in.readLine()+"\n";
+				 inputl = in.readLine()+"\n";
 			}		
 			fout.close();
 		} 
